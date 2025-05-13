@@ -12,5 +12,6 @@
         }
     ],
     "scripts": {},
-    "keywords": []
+    "keywords": [],
+    "packageManager": "pnpm@10.10.0"
 }
