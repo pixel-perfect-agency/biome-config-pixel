@@ -1,0 +1,15 @@
+{
+    "name": "biome-config-pixel",
+    "version": "0.0.0",
+    "description": "Preconfigured Biome config for Next.js, Typescript, and Tailwind CSS",
+    "main": "index.js",
+    "author": "Pixel Perfect Agency (https://pixelperfect.agency)",
+    "contributors": [
+        {
+            "name": "Willem-Jaap",
+            "url": "https://github.com/Willem-Jaap"
+        }
+    ],
+    "scripts": {},
+    "keywords": []
+}
