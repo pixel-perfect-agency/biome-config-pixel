@@ -4,7 +4,7 @@ Strict Biome configuration maintained by Pixel Perfect Agency.
 
 ## Rationale
 
-This package is designed for usage with [Next.js](https://nextjs.org/), [React](https://reactjs.org/), [TypeScript](https://www.typescriptlang.org/) and [Prettier](https://prettier.io/).
+This package is designed for usage with [Next.js](https://nextjs.org/), [React](https://reactjs.org/), [TypeScript](https://www.typescriptlang.org/) and [Tailwind CSS](https://tailwindcss.com/).
 
 We want to have a strict Biome configuration that is consistent across projects. This package implements the configuration we use in our projects.
 
