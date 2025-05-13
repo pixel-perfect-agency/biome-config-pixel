@@ -3,7 +3,15 @@
     "vcs": { "enabled": false, "clientKind": "git", "useIgnoreFile": false },
     "files": {
         "ignoreUnknown": false,
-        "ignore": ["**/.git", "**/node_modules", "**/vendor", "**/.next", "**/.dist", "apps/api/**/*", "**/generated"]
+        "ignore": [
+            "**/.git",
+            "**/node_modules",
+            "**/vendor",
+            "**/.next",
+            "**/.dist",
+            "apps/api/**/*",
+            "**/generated"
+        ]
     },
     "organizeImports": { "enabled": true },
     "formatter": {

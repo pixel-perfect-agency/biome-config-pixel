@@ -18,13 +18,6 @@
         "lint": "biome check",
         "lint:fix": "biome check --write"
     },
-    "keywords": [
-        "biome",
-        "formatter",
-        "linter",
-        "typescript",
-        "nextjs",
-        "tailwindcss"
-    ],
+    "keywords": ["biome", "formatter", "linter", "typescript", "nextjs", "tailwindcss"],
     "packageManager": "pnpm@10.10.0"
 }
