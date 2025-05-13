@@ -11,6 +11,10 @@
             "url": "https://github.com/Willem-Jaap"
         }
     ],
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/pixel-perfect-agency/biome-config-pixel.git"
+    },
     "exports": {
         ".": "./biome.jsonc"
     },
@@ -22,5 +26,9 @@
         "lint:fix": "biome check --write"
     },
     "keywords": ["biome", "formatter", "linter", "typescript", "nextjs", "tailwindcss"],
-    "packageManager": "pnpm@10.10.0"
+    "packageManager": "pnpm@10.10.0",
+    "publishConfig": {
+        "access": "public",
+        "registry": "https://registry.npmjs.org/"
+    }
 }
