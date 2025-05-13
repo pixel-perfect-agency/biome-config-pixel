@@ -11,6 +11,9 @@
             "url": "https://github.com/Willem-Jaap"
         }
     ],
+    "exports": {
+        ".": "./biome.jsonc"
+    },
     "devDependencies": {
         "@biomejs/biome": "^1.9.4"
     },
