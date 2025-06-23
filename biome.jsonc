@@ -1,19 +1,20 @@
 {
-    "$schema": "https://biomejs.dev/schemas/1.9.4/schema.json",
+    "$schema": "https://biomejs.dev/schemas/2.0.4/schema.json",
     "vcs": { "enabled": false, "clientKind": "git", "useIgnoreFile": false },
     "files": {
         "ignoreUnknown": false,
-        "ignore": [
-            "**/.git",
-            "**/node_modules",
-            "**/vendor",
-            "**/.next",
-            "**/.dist",
-            "apps/api/**/*",
-            "**/generated"
+        "includes": [
+            "**",
+            "!**/.git",
+            "!**/node_modules",
+            "!**/vendor",
+            "!**/.next",
+            "!**/.dist",
+            "!**/apps/api/**/*",
+            "!**/generated"
         ]
     },
-    "organizeImports": { "enabled": true },
+    "assist": { "actions": { "source": { "organizeImports": "on" } } },
     "formatter": {
         "enabled": true,
         "useEditorconfig": true,
@@ -24,7 +25,7 @@
         "lineWidth": 100,
         "attributePosition": "auto",
         "bracketSpacing": true,
-        "ignore": []
+        "includes": ["**"]
     },
     "linter": {
         "enabled": true,
@@ -34,10 +35,15 @@
                 "noUnusedImports": "error",
                 "noUnknownFunction": "off"
             },
+            "performance": {
+                "noImgElement": "off"
+            },
             "a11y": {
-                "useKeyWithClickEvents": "off"
+                "useKeyWithClickEvents": "off",
+                "noStaticElementInteractions": "off"
             },
             "nursery": {
+                "useUniqueElementIds": "off",
                 "useSortedClasses": {
                     "level": "error",
                     "fix": "safe",
@@ -46,6 +52,18 @@
                         "functions": ["cn"]
                     }
                 }
+            },
+            "style": {
+                "noParameterAssign": "error",
+                "useAsConstAssertion": "error",
+                "useDefaultParameterLast": "error",
+                "useEnumInitializers": "error",
+                "useSelfClosingElements": "error",
+                "useSingleVarDeclarator": "error",
+                "noUnusedTemplateLiteral": "error",
+                "useNumberNamespace": "error",
+                "noInferrableTypes": "error",
+                "noUselessElse": "error"
             }
         }
     },
