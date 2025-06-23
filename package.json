@@ -18,15 +18,24 @@
     "exports": {
         ".": "./biome.jsonc"
     },
-    "files": ["biome.jsonc"],
+    "files": [
+        "biome.jsonc"
+    ],
     "devDependencies": {
-        "@biomejs/biome": "^1.9.4"
+        "@biomejs/biome": "^2.0.4"
     },
     "scripts": {
         "lint": "biome check",
         "lint:fix": "biome check --write"
     },
-    "keywords": ["biome", "formatter", "linter", "typescript", "nextjs", "tailwindcss"],
+    "keywords": [
+        "biome",
+        "formatter",
+        "linter",
+        "typescript",
+        "nextjs",
+        "tailwindcss"
+    ],
     "packageManager": "pnpm@10.10.0",
     "publishConfig": {
         "access": "public",
