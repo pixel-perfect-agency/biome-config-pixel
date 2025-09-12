@@ -1,5 +1,5 @@
 {
-    "$schema": "https://biomejs.dev/schemas/2.1.1/schema.json",
+    "$schema": "https://biomejs.dev/schemas/2.2.0/schema.json",
     "vcs": { "enabled": false, "clientKind": "git", "useIgnoreFile": false },
     "files": {
         "ignoreUnknown": false,
@@ -33,7 +33,8 @@
             "recommended": true,
             "correctness": {
                 "noUnusedImports": "error",
-                "noUnknownFunction": "off"
+                "noUnknownFunction": "off",
+                "useUniqueElementIds": "off"
             },
             "performance": {
                 "noImgElement": "off"
@@ -43,7 +44,6 @@
                 "noStaticElementInteractions": "off"
             },
             "nursery": {
-                "useUniqueElementIds": "off",
                 "useSortedClasses": {
                     "level": "error",
                     "fix": "safe",
@@ -63,7 +63,18 @@
                 "noUnusedTemplateLiteral": "error",
                 "useNumberNamespace": "error",
                 "noInferrableTypes": "error",
-                "noUselessElse": "error"
+                "noUselessElse": "error",
+                "noRestrictedImports": {
+                    "level": "warn",
+                    "options": {
+                        "patterns": [
+                            {
+                                "group": ["./*", "../*"],
+                                "message": "Relative imports are discouraged. Use absolute imports from the project root instead."
+                            }
+                        ]
+                    }
+                }
             }
         }
     },
