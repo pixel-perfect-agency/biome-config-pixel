@@ -22,7 +22,7 @@
         "biome.jsonc"
     ],
     "devDependencies": {
-    "@biomejs/biome": "^2.2.0"
+        "@biomejs/biome": "^2.2.3"
     },
     "scripts": {
         "lint": "biome check",
