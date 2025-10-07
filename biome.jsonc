@@ -33,7 +33,8 @@
             "recommended": true,
             "correctness": {
                 "noUnusedImports": "error",
-                "noUnknownFunction": "off"
+                "noUnknownFunction": "off",
+                "useUniqueElementIds": "off"
             },
             "performance": {
                 "noImgElement": "off"
@@ -43,7 +44,6 @@
                 "noStaticElementInteractions": "off"
             },
             "nursery": {
-                "useUniqueElementIds": "off",
                 "useSortedClasses": {
                     "level": "error",
                     "fix": "safe",
