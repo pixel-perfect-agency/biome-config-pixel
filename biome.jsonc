@@ -13,6 +13,7 @@
             "!**/node_modules",
             "!**/vendor",
             "!**/.next",
+            "!**/next-env.d.ts",
             "!**/.dist",
             "!**/apps/api/**/*",
             "!**/generated"
@@ -88,6 +89,11 @@
             "bracketSameLine": false,
             "attributePosition": "auto",
             "bracketSpacing": true
+        }
+    },
+    "css": {
+        "parser": {
+            "tailwindDirectives": true
         }
     }
 }
