@@ -1,6 +1,6 @@
 {
     "name": "biome-config-pixel",
-    "version": "2.1.1",
+    "version": "2.1.5",
     "description": "Preconfigured Biome config for Next.js, Typescript, and Tailwind CSS",
     "main": "index.js",
     "author": "Pixel Perfect Agency (https://pixelperfect.agency)",
@@ -22,7 +22,7 @@
         "biome.jsonc"
     ],
     "devDependencies": {
-        "@biomejs/biome": "^2.2.5"
+        "@biomejs/biome": "^2.3.13"
     },
     "scripts": {
         "lint": "biome check",
