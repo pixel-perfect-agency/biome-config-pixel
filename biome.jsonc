@@ -74,7 +74,18 @@
                 "noUnusedTemplateLiteral": "error",
                 "useNumberNamespace": "error",
                 "noInferrableTypes": "error",
-                "noUselessElse": "error"
+                "noUselessElse": "error",
+                "noRestrictedImports": {
+                    "level": "warn",
+                    "options": {
+                        "patterns": [
+                            {
+                                "group": ["./*", "../**"],
+                                "message": "Relative imports are discouraged. Use absolute imports from the project's path or root instead."
+                            }
+                        ]
+                    }
+                }
             }
         }
     },
